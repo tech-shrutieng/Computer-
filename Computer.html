@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Computer Institute</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      background: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(255,255,255,0.1);
+    }
+
+    header h1 {
+      color: #00e6e6;
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00e6e6;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1400&q=60') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      color: #00e6e6;
+      text-shadow: 2px 2px 10px #000;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 15px;
+      color: #fff;
+      text-shadow: 1px 1px 8px #000;
+    }
+
+    section {
+      padding: 60px 80px;
+    }
+
+    .about, .courses, .contact {
+      text-align: center;
+    }
+
+    .about h2, .courses h2, .contact h2 {
+      color: #00e6e6;
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .course-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .course {
+      background: #111;
+      border: 1px solid #333;
+      padding: 25px;
+      width: 250px;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .course:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 15px #00e6e6;
+    }
+
+    .course h3 {
+      color: #00e6e6;
+      margin-bottom: 10px;
+    }
+
+    .course p {
+      color: #ccc;
+      font-size: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 6px;
+      background: #222;
+      color: #fff;
+    }
+
+    button {
+      background: #00e6e6;
+      border: none;
+      padding: 12px 25px;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #00cccc;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      color: #999;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Smart Computer Institute</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div>
+      <h2>Learn Computer Skills with Us</h2>
+      <p>HTML | CSS | JavaScript | Python | MS Office</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Smart Computer Institute — a place where you can learn everything about computers in a simple and practical way. From basic computer operations to advanced programming, we provide real-world knowledge with hands-on training.</p>
+  </section>
+
+  <section class="courses" id="courses">
+    <h2>Our Courses</h2>
+    <div class="course-container">
+      <div class="course">
+        <h3>HTML & CSS</h3>
+        <p>Learn how to create and style beautiful websites from scratch using HTML and CSS.</p>
+      </div>
+      <div class="course">
+        <h3>JavaScript</h3>
+        <p>Make your website interactive with JavaScript and learn dynamic web programming.</p>
+      </div>
+      <div class="course">
+        <h3>Python</h3>
+        <p>Master Python programming for web development, automation, and data analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Smart Computer Institute | All Rights Reserved
+  </footer>
+
+</body>
+</html>
